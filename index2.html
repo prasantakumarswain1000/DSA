@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>insert element in array</title>
+    <script>
+      function input() {
+        let data = [3, 5, 6, 8, 9, 6, 7];
+        let newE1 = document.getElementById("element").value;
+          newE1=parseInt(newE1)
+        let position = document.getElementById("element1").value;
+
+        for (let i = data.length-1 ; i >= 0; i--) {
+          if (i >= position) {
+            data[i + 1] = data[i];
+            if (i == position) {
+              data[i] = newE1;
+            }
+          }
+        }
+        console.warn(data)
+      }
+      
+    </script>
+  </head>
+  <body>
+    <input type="text" id="element" placeholder="enterr num" />
+    <input type="text" id="element1" placeholder="enter position" />
+
+    <button onclick="input()">click</button>
+  </body>
+</html>

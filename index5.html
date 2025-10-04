@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>merge two element</title>
+    <script>
+      let data = [34, 45, 67, 8, 99, 46];
+      let data2 = [34, 67, 89, 90, 0, 56];
+      let data3 = [];
+      for (let i = 0; i < data.length; i++) {
+        data3[i] = data[i];
+        for (let i = 0; i < data2.length; i++) {
+          data3[data.length+i]= data2[i];
+        } 
+      }
+      console.warn(data3);
+    </script>
+  </head>
+  <body></body>
+</html>
