@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      let money = 100;
+      let totalApple = 0;
+      function buyApple(x) {
+        if (x > 0) {
+          console.warn("i have", x, "rs", totalApple);
+          buyMore(x);
+        } else {
+          console.warn(" i dont have no  money", totalApple);
+        }
+      }
+      function buyMore(x) {
+        totalApple++;
+        buyApple(x - 5);
+      }
+      buyApple(money);
+      // when the x is greater than 0 then the console can run where the seccond funcction can be run wheen the apple can be incresed then the total apple can be in crresed then the money decresed by the x-5
+    </script>
+  </head>
+  <body></body>
+</html>
