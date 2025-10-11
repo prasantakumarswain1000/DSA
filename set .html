@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        let data=new Set(["anil","radhu","sadhhu","jiban"]);
+        data.add({"email":"test@test.com"})
+        data.delete('anil');
+        console.warn(data);
+
+            //for(x of data){
+              //  consol.warn(x)
+            //}
+            data.forEach((val)=>{
+                console.warn(val)
+            })
+            console.warn(data.entries())
+            console.warn(data.has('peter'))
+            console.warn(data.has("radhu"))
+    </script>
+</body>
+</html>
